@@ -1,36 +1,110 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🍔 FoodieApp
 
-## Getting Started
+A responsive, modern food delivery web app built with Next.js 15 (App Router), Redux Toolkit, and Tailwind CSS v4.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Setup Instructions
+
+1. **Clone this repository:**
+
+   ```bash
+   git clone <your-repo-url>
+   cd food-delivery-app
+   ```
+
+2. **Install dependencies:**
+
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Run the development server:**
+
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+4. **Visit [http://localhost:3000](http://localhost:3000) in your browser.**
+
+---
+
+## ✨ Features
+
+- **Responsive Design**: Mobile-first layout, adapts for desktop and tablet.
+- **Dark/Light Theme Toggle**: Easily switch theme with the button (bottom right corner).
+- **Homepage Sections**: Featured, Recommended, Categories, How It Works, and Special Offers.
+- **Menu Page**: Filter food by categories; see grid of food items.
+- **Add to Cart**: Add, remove, and update quantities for each food item.
+- **Cart Page**: Shows all cart items, delivery charge (free above ₹500), GST, subtotal, and total.
+- **Checkout Page**: Fill delivery form, review order summary, and place a dummy order.
+- **Reusable Components**: Buttons, Quantity Selectors, Food Cards, Input Fields, Skeleton loaders, etc.
+- **Redux Toolkit**: Manages cart state globally.
+- **Mock Data**: All data is mocked and images use online sources.
+- **Order Summary Logic**: Shared calculation for cart and checkout for consistency.
+- **Accessibility & Clean Code**: Semantic HTML, alt texts, focus styles, keyboard support.
+- **Modern Next.js**: Uses App Router, optimized images, and all best practices.
+- **Tailwind CSS v4**: No config file needed, just theme variables if you want to extend (see docs).
+
+---
+
+## 💡 How to Use
+
+1. **Browse Home & Menu**: Explore featured, recommended, and all menu items. Filter by categories.
+2. **Add Items**: Use "Add to Cart" or the +/- quantity selector for food items.
+3. **Manage Cart**: Click Cart to review, adjust quantity, or remove items.
+4. **Checkout**: Enter your name, address, phone. See your order breakdown (free delivery above ₹500).
+5. **Place Order**: Dummy logic places order, clears cart, and shows a confirmation.
+6. **Theme Toggle**: Use the floating sun/moon button at the bottom right to switch light/dark mode.
+
+---
+
+## 🖼️ Screenshots
+
+> ![Home Page](screenshots/home.png)
+
+---
+
+## 📁 Folder Structure
+
+```
+/app             # Next.js app pages & layouts
+/components      # Reusable React components (Navbar, Button, etc.)
+/redux           # Redux store, slices, provider
+/utils           # Helper functions (e.g., orderSummary logic)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Next.js 15 (App Router)**
+- **Tailwind CSS v4**
+- **Redux Toolkit**
+- **TypeScript**
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## ⚡ Notable UI/UX Details
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Theme-aware**: All components adapt to dark and light mode, including inputs, nav, and cards.
+- **Delivery charge**: Automatically applies free delivery above ₹500.
+- **GST Calculation**: Transparent, applied everywhere consistently.
+- **Loading Skeletons**: Smooth transition as data “loads.”
+- **Customizable**: Easily extend food items, categories, styles, and more.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🙏 Credits
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Made by SyntaxArchitect for demo and educational purposes.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+**Enjoy using FoodieApp!**
+
+---
