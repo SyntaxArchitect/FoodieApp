@@ -16,6 +16,7 @@ export { default as FeaturedSection } from "./sections/FeaturedSection";
 export { default as LimitedOfferSection } from "./sections/LimitedOfferSection";
 export { default as RecommendedSection } from "./sections/RecommendedSection";
 export { default as HowItWorksSection } from "./sections/HowItWorksSection";
+export { default as MenuContent } from "./sections/MenuContent";
 
 // Card Components
 export { default as FoodCard } from "./cards/FoodCard";
