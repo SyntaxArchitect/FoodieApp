@@ -9,7 +9,7 @@ A responsive, modern food delivery web app built with Next.js 15 (App Router), R
 1. **Clone this repository:**
 
    ```bash
-   git clone <your-repo-url>
+   git clone [https://github.com/SyntaxArchitect/FoodieApp.git](https://github.com/SyntaxArchitect/FoodieApp.git)
    cd food-delivery-app
    ```
 
